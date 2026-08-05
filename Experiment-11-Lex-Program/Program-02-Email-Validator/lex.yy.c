@@ -282,11 +282,13 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 3
-#define YY_END_OF_BUFFER 4
-static yyconst short int yy_accept[9] =
+#define YY_NUM_RULES 4
+#define YY_END_OF_BUFFER 5
+static yyconst short int yy_accept[24] =
     {   0,
-        0,    0,    4,    2,    3,    1,    1,    0
+        0,    0,    5,    2,    3,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    1,    0
     } ;
 
 static yyconst int yy_ec[256] =
@@ -294,17 +296,17 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    3,    1,    1,    1,
+        1,    1,    3,    1,    4,    5,    1,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    1,    1,    1,
+        1,    1,    1,    6,    4,    4,    4,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
+        1,    1,    1,    1,    3,    1,    4,    4,    7,    8,
 
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        9,    4,   10,    4,   11,    4,    4,    4,   12,   13,
+       14,    4,    4,   15,    4,   16,   17,    4,    4,    4,
+        4,    4,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -321,29 +323,44 @@ static yyconst int yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst int yy_meta[4] =
+static yyconst int yy_meta[18] =
     {   0,
-        1,    1,    2
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1
     } ;
 
-static yyconst short int yy_base[10] =
+static yyconst short int yy_base[29] =
     {   0,
-        0,    0,    5,    6,    6,    0,    0,    6,    2
+       37,    0,   38,    0,   40,    2,    0,    3,    9,   15,
+       15,   23,   28,   22,   25,   12,   13,    6,   17,    1,
+        3,   40,   40,   29,   31,   10,    6,    4
     } ;
 
-static yyconst short int yy_def[10] =
+static yyconst short int yy_def[29] =
     {   0,
-        8,    1,    8,    8,    8,    9,    9,    0,    8
+       24,   25,   23,   26,   23,   27,   26,   27,   28,   28,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   23,    0,   23,   23,   23,   23,   23
     } ;
 
-static yyconst short int yy_nxt[10] =
+static yyconst short int yy_nxt[58] =
     {   0,
-        4,    5,    6,    7,    8,    3,    8,    8,    8
+        4,    5,    7,    7,   10,    4,    8,    9,    9,    7,
+        7,    7,   19,   23,    7,    7,   19,    7,   22,   11,
+        7,   12,   19,   13,   19,   14,   21,   15,   16,    4,
+        4,    6,    6,   20,   19,   18,   17,   23,    5,    3,
+       23,   23,   23,   23,   23,   23,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   23,   23
     } ;
 
-static yyconst short int yy_chk[10] =
+static yyconst short int yy_chk[58] =
     {   0,
-        1,    1,    1,    9,    3,    8,    8,    8,    8
+        2,    2,    6,    8,   28,    2,   27,    6,    8,    9,
+       26,    9,   21,    0,    9,   10,   20,   10,   19,   10,
+       10,   11,   18,   11,   17,   11,   16,   11,   11,   24,
+       24,   25,   25,   15,   14,   13,   12,    3,    1,   23,
+       23,   23,   23,   23,   23,   23,   23,   23,   23,   23,
+       23,   23,   23,   23,   23,   23,   23
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -357,11 +374,11 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "lex_prog_1.l"
+#line 1 "email.l"
 #define INITIAL 0
-#line 2 "lex_prog_1.l"
+#line 2 "email.l"
 #include <stdio.h>
-#line 365 "lex.yy.c"
+#line 382 "lex.yy.c"
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -504,6 +521,9 @@ YY_MALLOC_DECL
 #endif
 
 #define YY_RULE_SETUP \
+	if ( yyleng > 0 ) \
+		yy_current_buffer->yy_at_bol = \
+				(yytext[yyleng - 1] == '\n'); \
 	YY_USER_ACTION
 
 YY_DECL
@@ -512,9 +532,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 5 "lex_prog_1.l"
+#line 5 "email.l"
 
-#line 518 "lex.yy.c"
+
+#line 539 "lex.yy.c"
 
 	if ( yy_init )
 		{
@@ -553,6 +574,7 @@ YY_DECL
 		yy_bp = yy_cp;
 
 		yy_current_state = yy_start;
+		yy_current_state += YY_AT_BOL();
 yy_match:
 		do
 			{
@@ -565,13 +587,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 9 )
+				if ( yy_current_state >= 24 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 6 );
+		while ( yy_base[yy_current_state] != 40 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -598,21 +620,29 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
+*yy_cp = yy_hold_char; /* undo effects of setting up yytext */
+yy_c_buf_p = yy_cp -= 1;
+YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 6 "lex_prog_1.l"
-{ printf("%s", yytext); }
+#line 7 "email.l"
+{ printf("Valid Email\n"); fflush(stdout); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 7 "lex_prog_1.l"
-;
+#line 8 "email.l"
+{ printf("Invalid Email\n"); fflush(stdout); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 8 "lex_prog_1.l"
+#line 9 "email.l"
+;
+	YY_BREAK
+case 4:
+YY_RULE_SETUP
+#line 11 "email.l"
 ECHO;
 	YY_BREAK
-#line 616 "lex.yy.c"
+#line 646 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -892,6 +922,7 @@ static yy_state_type yy_get_previous_state()
 	register char *yy_cp;
 
 	yy_current_state = yy_start;
+	yy_current_state += YY_AT_BOL();
 
 	for ( yy_cp = yytext_ptr + YY_MORE_ADJ; yy_cp < yy_c_buf_p; ++yy_cp )
 		{
@@ -904,7 +935,7 @@ static yy_state_type yy_get_previous_state()
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 9 )
+			if ( yy_current_state >= 24 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -939,11 +970,11 @@ yy_state_type yy_current_state;
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 9 )
+		if ( yy_current_state >= 24 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 8);
+	yy_is_jam = (yy_current_state == 23);
 
 	return yy_is_jam ? 0 : yy_current_state;
 	}
@@ -1062,6 +1093,7 @@ static int input()
 	*yy_c_buf_p = '\0';	/* preserve yytext */
 	yy_hold_char = *++yy_c_buf_p;
 
+	yy_current_buffer->yy_at_bol = (c == '\n');
 
 	return c;
 	}
@@ -1498,7 +1530,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 8 "lex_prog_1.l"
+#line 11 "email.l"
 
 
 int yywrap()
@@ -1508,7 +1540,8 @@ int yywrap()
 
 int main()
 {
-    printf("Enter string:\n");
+    printf("Enter the email address:\n");
+    fflush(stdout);
     yylex();
     return 0;
 }
