@@ -1,24 +1,34 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()
-{
-    char op;
+int main() {
+    char op[10];
 
-    printf("Enter an operator: ");
-    scanf("%c", &op);
+    printf("OPERATOR VALIDATOR\n");
+    printf("------------------\n");
+    printf("Enter operator: ");
+    scanf("%s", op);
 
-    switch(op)
-{
-    case '+':
-    case '-':
-    case '*':
-    case '/':
-    case '%':
-        printf("Valid Arithmetic Operator");
-        break;
+    if (strcmp(op, "+") == 0 ||
+        strcmp(op, "-") == 0 ||
+        strcmp(op, "*") == 0 ||
+        strcmp(op, "/") == 0 ||
+        strcmp(op, "%") == 0 ||
+        strcmp(op, "++") == 0 ||
+        strcmp(op, "--") == 0 ||
+        strcmp(op, "==") == 0 ||
+        strcmp(op, "!=") == 0 ||
+        strcmp(op, "<") == 0 ||
+        strcmp(op, ">") == 0 ||
+        strcmp(op, "<=") == 0 ||
+        strcmp(op, ">=") == 0 ||
+        strcmp(op, "&&") == 0 ||
+        strcmp(op, "||") == 0 ||
+        strcmp(op, "=") == 0) {
+        printf("Valid operator\n");
+    } else {
+        printf("Invalid operator\n");
+    }
 
-    default:
-        printf("Invalid Operator");
-}
     return 0;
 }
